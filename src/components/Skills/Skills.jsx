@@ -38,7 +38,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <motion.div variants={fadeIn("left", 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.4 }} className="skills-right">
+            <motion.div variants={fadeIn("right", 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.4 }} className="skills-right">
                 <img src={iphone} />
             </motion.div>
         </div>

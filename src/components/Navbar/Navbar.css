@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     padding-top: 10px;
 }
 
@@ -32,9 +32,7 @@ li.active::after {
     left: 0;
     background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
     transform: scaleX(1);
-    /* Always visible when active */
     transition: transform 0.3s ease;
-    /* Add transition for smooth effect */
 }
 
 /* Hover effect for all menu items */
@@ -47,14 +45,11 @@ li::after {
     left: 0;
     background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
     transform: scaleX(0);
-    /* Initially not visible */
     transition: transform 0.3s ease;
-    /* Add transition for smooth hover effect */
 }
 
 li:hover::after {
     transform: scaleX(1);
-    /* Show underline on hover */
 }
 
 /* ---------------- Connect with me button ---------------- */
@@ -107,18 +102,16 @@ h1 {
 .nav-mobile-open {
     display: none;
 }
+
+/* ---------------- Responsive Design ---------------- */
+
 @media (min-width:992px) and (max-width:1200px) {
     button {
         padding: 1em 15px;
     }
 }
-@media (max-width:992px){
-    button {
-        padding: 1em 15px;
-    }
-}
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width:768px) {
+
+@media (max-width: 992px) {
     .navbar {
         margin: 20px 50px;
     }
@@ -129,16 +122,6 @@ h1 {
 
     .nav-mobile-open {
         display: block;
-        cursor: pointer;
-    }
-
-    .nav-mobile-close {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 20px;
-        width: 30px;
-        color: white;
         cursor: pointer;
     }
 
@@ -161,41 +144,6 @@ h1 {
         right: 0;
     }
 
-}
-@media (max-width:576px){
-    .navbar {
-        width: 100%;
-        margin: 10px 2  px;
-        justify-content: space-between;
-    }
-
-    .nav-connect {
-        display: none;
-    }
-
-    .nav-mobile-open {
-        display: block;
-        cursor: pointer;
-    }
-
-}
-
-@media screen and (min-width:320px) and (max-width:379px) {
-    .navbar {
-        width: 100%;
-        margin: 10px 0px;
-        justify-content: space-between;
-    }
-
-    .nav-connect {
-        display: none;
-    }
-
-    .nav-mobile-open {
-        display: block;
-        cursor: pointer;
-    }
-
     .nav-mobile-close {
         display: block;
         position: absolute;
@@ -203,6 +151,26 @@ h1 {
         right: 20px;
         width: 30px;
         color: white;
+        cursor: pointer;
+    }
+    button {
+        padding: 1em 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        width: 100%;
+        margin: 10px 2px;
+        justify-content: space-between;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mobile-open {
+        display: block;
         cursor: pointer;
     }
 
@@ -225,3 +193,61 @@ h1 {
         right: 0;
     }
 }
+
+@media (max-width: 379px) {
+    .navbar {
+        width: 100%;
+        margin: 10px 0;
+        justify-content: space-between;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mobile-open {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        padding-top: 30px;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: #000000;
+        height: 100%;
+        width: 300px;
+        z-index: 100;
+        transition: right 0.5s ease;
+        right: -300px;
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+}
+
+/* Further breakpoints for tablet, mobile landscape, and others can be adjusted here. */
+
+/* For mobile (below 600px) */
+@media screen and (max-width: 599px) {
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+}
+
