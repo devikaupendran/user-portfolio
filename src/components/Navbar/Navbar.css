@@ -107,7 +107,16 @@ h1 {
 .nav-mobile-open {
     display: none;
 }
-
+@media (min-width:992px) and (max-width:1200px) {
+    button {
+        padding: 1em 15px;
+    }
+}
+@media (max-width:992px){
+    button {
+        padding: 1em 15px;
+    }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width:768px) {
     .navbar {
@@ -120,9 +129,6 @@ h1 {
 
     .nav-mobile-open {
         display: block;
-        position: fixed;
-        right: 10px;
-        top: 26px;
         cursor: pointer;
     }
 
@@ -156,32 +162,66 @@ h1 {
     }
 
 }
+@media (max-width:576px){
+    .navbar {
+        width: 100%;
+        margin: 10px 2  px;
+        justify-content: space-between;
+    }
 
+    .nav-connect {
+        display: none;
+    }
 
+    .nav-mobile-open {
+        display: block;
+        cursor: pointer;
+    }
 
+}
 
+@media screen and (min-width:320px) and (max-width:379px) {
+    .navbar {
+        width: 100%;
+        margin: 10px 0px;
+        justify-content: space-between;
+    }
 
+    .nav-connect {
+        display: none;
+    }
 
+    .nav-mobile-open {
+        display: block;
+        cursor: pointer;
+    }
 
+    .nav-mobile-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 30px;
+        color: white;
+        cursor: pointer;
+    }
 
+    .nav-menu {
+        padding-top: 30px;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: #000000;
+        height: 100%;
+        width: 300px;
+        z-index: 100;
+        transition: right 0.5s ease;
+        right: -300px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .nav-menu.open {
+        right: 0;
+    }
+}

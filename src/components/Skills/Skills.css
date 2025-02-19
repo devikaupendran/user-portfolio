@@ -72,14 +72,12 @@
     border-radius: 50px;
     /* background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%); */
     background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%);
-    animation: growWidth 1s ease-in-out forwards;
-    width: 0%;
-    --hr-width: 0%;
+
 }
 
 
 
-@keyframes growWidth {
+/* @keyframes growWidth {
     0% {
         width: 0;
     }
@@ -95,7 +93,7 @@
 
 .skills-left .skill:nth-child(2) hr {
     --hr-width: 50%;
-}
+} */
 
 @media (min-width:992px) and (max-width:1200px) {
 
