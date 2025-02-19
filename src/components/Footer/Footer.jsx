@@ -11,12 +11,12 @@ const Footer = () => {
                     <p>I am an experienced iOS Application Developer with one year of professional experience in this field.</p>
                 </div>
 
-                <div className="footer-top-right">
+                {/* <div className="footer-top-right">
                     <div className="footer-email-input">
                         <img src={userIcon} alt="" />
                         <input type="email" placeholder='Enter your email' />
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <hr />
