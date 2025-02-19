@@ -153,6 +153,7 @@ h1 {
         color: white;
         cursor: pointer;
     }
+
     button {
         padding: 1em 15px;
     }
@@ -229,25 +230,3 @@ h1 {
         right: 0;
     }
 }
-
-/* Further breakpoints for tablet, mobile landscape, and others can be adjusted here. */
-
-/* For mobile (below 600px) */
-@media screen and (max-width: 599px) {
-    .navbar {
-        width: 100%;
-        justify-content: space-between;
-        margin: 10px;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .nav-menu.open {
-        display: flex;
-    }
-}
-
