@@ -1,0 +1,91 @@
+/* -------project main container-------  */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 16% 0;
+}
+
+/* ----------- heading ---------  */
+.project-title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.projects img {
+    width: 380px;
+}
+
+
+/* ----------show more button -------  */
+
+.show-btn {
+    --color: #2EBCBF;
+    --hover: #EB60E2;
+}
+
+.show-btn {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.show-btn:hover {
+    box-shadow: 0 0 0 0 var(--hover), inset 13em 3.5em 0 0 var(--hover);
+}
+
+.project-container button {
+    color: var(--color);
+    transition: 0.65s;
+}
+
+.project-container button:hover {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.project-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 13px 38px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.project-container button span {
+    font-size: 35px;
+}
+
+@media (max-width:768px) {
+    .project-title h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width:576px) {
+    .project-title h1 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width:320px) and (max-width:575px) {
+    .projects img {
+        width: 250px;
+    }
+}

@@ -1,0 +1,199 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 13% 0;
+}
+
+.contact-title h1 {
+    padding: 0 30px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.contact-section {
+    display: flex;
+    gap: 150px;
+    width: 100%;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%);
+    background-clip: clip;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 35px;
+    color: #d8d8d8;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #d8d8d8;
+    font-size: 22px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label {
+    color: #d8d8d8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input {
+    border: none;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 20px;
+}
+
+.contact-right textarea {
+    border: none;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-size: 20px;
+    resize: none;
+}
+
+/* ---------------- Submit button ---------------- */
+
+.contact-right button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 40px;
+    cursor: pointer;
+}
+
+.contact-submit {
+    --color: #2EBCBF;
+    --hover: #EB60E2;
+}
+
+.contact-submit {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.contact-submit:hover {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.contact-right button {
+    color: var(--color);
+    transition: 0.65s;
+}
+
+.contact-right button:hover {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+@media (max-width:1400px){
+    .contact-left{
+        width: 30%;
+    }
+    .contact-right{
+        width: 70%;
+    }
+    .contact-left p{
+        font-size: 15px;
+    }
+    .contact-section {
+        gap: 100px;
+    }
+}
+
+@media (max-width:1200px) {
+    .contact-left p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:992px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-left p{
+        max-width: 100%;
+    }
+    .detail img{
+        width: 30px;
+    }
+    .detail p{
+        font-size: 17px
+    }
+    .contact-left,
+    .contact-right{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-left{
+        align-items: center;
+        width: 100%;
+    }
+    .contact-left p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .contact-right{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:576px){
+    .contact-title h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:379px){
+    .contact-title h1{
+        font-size: 40px;
+    }
+}

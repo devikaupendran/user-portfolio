@@ -1,0 +1,187 @@
+/* ---------------- Navbar Styles ---------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    padding-top: 10px;
+}
+
+/* ---------------- Navigation menus ---------------- */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+li {
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+}
+
+/* Underline for the active menu item */
+li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
+    transform: scaleX(1);
+    /* Always visible when active */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+/* Hover effect for all menu items */
+li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
+    transform: scaleX(0);
+    /* Initially not visible */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth hover effect */
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    /* Show underline on hover */
+}
+
+/* ---------------- Connect with me button ---------------- */
+.nav-connect {
+    --color: #2EBCBF;
+    --hover: #EB60E2;
+}
+
+.nav-connect {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.nav-connect:hover {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+button {
+    color: var(--color);
+    transition: 0.65s;
+}
+
+button:hover {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 25px;
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-mobile-close {
+    display: none;
+}
+
+.nav-mobile-open {
+    display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width:768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mobile-open {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 26px;
+        cursor: pointer;
+    }
+
+    .nav-mobile-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        padding-top: 30px;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: #000000;
+        height: 100%;
+        width: 350px;
+        z-index: 100;
+        transition: right 0.5s ease;
+        right: -350px;
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+/* Main container for the services */
+.services {
+    margin: 20% 0 5% 0;
+}
+
+/* Title of the services */
+.services-title {
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Container for images and titles */
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Styling the individual service */
+.service {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling the images */
+.service img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+/* Overlay effect within the image */
+.service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: opacity 0.5s ease;
+}
+
+/* Hover effect to reveal the overlay */
+.service:hover .overlay {
+    opacity: 1;
+}
+
+.service:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+/* Service title below the image */
+.service h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fffdfd;
+    position: relative;
+    z-index: 1;
+}
+
+/* Description text inside the overlay */
+.service p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+@media (max-width:992px) {
+    .service {
+        width: 280px;
+    }
+
+    .service img {
+        height: 280px;
+    }
+
+    .service .overlay {
+        height: 280px;
+        width: 100%;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .services-title {
+        font-size: 30px;
+    }
+
+    .service {
+        width: 200px;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service img {
+        height: 200px;
+    }
+
+    .service .overlay {
+        height: 200px;
+        width: 100%;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:576px) {
+    .service {
+        width: 220px;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service img {
+        height: 220px;
+    }
+
+    .service .overlay {
+        height: 220px;
+        width: 100%;
+    }
+
+    .overlay p {
+        font-size: 18px;
+    }
+}
