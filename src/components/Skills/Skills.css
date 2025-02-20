@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+
 }
 
 .skills {
@@ -68,14 +69,35 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.skill hr {
+/* .skill hr {
     outline: none;
     border: none;
     height: 6px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%);
+    background: rgb(235, 96, 226);
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
+} */
 
+.skill p {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 3px;
 }
+
+.skill p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 0%, rgba(46, 188, 191, 1) 100%);
+}
+
 
 /* ------------------------------------------------ responsive ------------------------------------------------  */
 

@@ -51,19 +51,6 @@ const ShowProjects = () => {
         );
     };
 
-    // Automatically change image every 3 seconds
-    useEffect(() => {
-        if (selectedProject && selectedProject.carousal && selectedProject.carousal.length > 1) {
-            const intervalId = setInterval(() => {
-                setCurrentImageIndex((prevIndex) =>
-                    prevIndex === selectedProject.carousal.length - 1 ? 0 : prevIndex + 1
-                );
-            }, 3000);
-
-            return () => clearInterval(intervalId); // Clean up the interval
-        }
-    }, [selectedProject]);
-
 
     //render
     return (

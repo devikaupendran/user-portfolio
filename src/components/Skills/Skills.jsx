@@ -24,7 +24,7 @@ const Skills = () => {
                             <span>UIKit</span>
                         </div>
                         <div className="percentage">
-                            <hr style={{ width: '70%' }} /> <span>7.5</span>
+                            <p style={{ width: '70%' }} /> <span>7.5</span>
                         </div>
 
                     </div>
@@ -37,7 +37,7 @@ const Skills = () => {
                         </div>
 
                         <div className="percentage">
-                            <hr style={{ width: '50%' }} /> <span>5 </span>
+                            <p style={{ width: '50%' }} /> <span>5 </span>
                         </div>
 
                     </div>

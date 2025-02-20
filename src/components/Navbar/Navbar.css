@@ -91,17 +91,17 @@ li:hover::after {
     box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
 
-button {
+.nav-connect {
     color: var(--color);
     transition: 0.65s;
 }
 
-button:hover {
+.nav-connect:hover {
     border-color: var(--hover);
     color: #fff;
 }
 
-button {
+.nav-connect {
     background: none;
     border: 2px solid;
     font: inherit;

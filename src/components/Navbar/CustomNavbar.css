@@ -1,35 +1,56 @@
-@media (max-width: 992px) {
-    .nav-connect {
-        display: flex;
-    }
-
-    .navbar {
-        width: 100%;
-        margin: 10px 2px;
-        justify-content: space-between;
-    }
+/* ---------------- Navbar Styles ---------------- */
+.customNavbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-top: 10px;
 }
 
-@media (max-width: 576px) {
-    .nav-connect {
-        display: flex;
-    }
-
-    .navbar {
-        width: 100%;
-        margin: 10px 2px;
-        justify-content: space-between;
-    }
+a {
+    color: white;
 }
 
-@media (max-width: 379px) {
-    .nav-connect {
-        display: flex;
-    }
-
-    .navbar {
-        width: 100%;
-        margin: 10px 2px;
-        justify-content: space-between;
-    }
+h1 {
+    font-weight: 700;
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+/* ---------------- Connect with me button ---------------- */
+.customNav-connect {
+    --color: #2EBCBF;
+    --hover: #EB60E2;
+}
+
+.customNav-connect {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.customNav-connect:hover {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.customNav-connect {
+    color: var(--color);
+    transition: 0.65s;
+}
+
+.customNav-connect:hover {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.customNav-connect  {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 25px;
+    cursor: pointer;
+}
+

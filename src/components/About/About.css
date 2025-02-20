@@ -150,7 +150,7 @@
     }
 
     .about-left .loader {
-        top: 170px;
+        top: 160px;
         width: 300px;
         height: 300px;
     }
@@ -179,7 +179,7 @@
     }
 
     .about-left .loader {
-        top: 130px;
+        top: 128px;
         width: 250px;
         height: 250px;
     }
@@ -204,7 +204,7 @@
     }
 }
 
-@media screen and (min-width: 380px) and (max-width: 679px) {
+@media screen and (min-width: 390px) and (max-width: 679px) {
     .about-sections {
         gap: 20px;
         flex-direction: column;
@@ -221,7 +221,7 @@
     }
 
     .about-left .loader {
-        top: 140px;
+        top: 136px;
         width: 180px;
         height: 180px;
     }
@@ -247,7 +247,7 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width:379px) {
+@media screen and (min-width:320px) and (max-width:400px) {
     .about-sections {
         gap: 20px;
         flex-direction: column;
@@ -264,7 +264,7 @@
     }
 
     .about-left .loader {
-        top: 140px;
+        top: 135px;
         width: 100px;
         height: 100px;
     }
