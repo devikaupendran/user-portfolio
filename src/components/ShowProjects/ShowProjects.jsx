@@ -71,8 +71,8 @@ const ShowProjects = () => {
 
                         {/* -------------- button for detailed view and show the video --------------  */}
                         <div className="viewBtn d-flex justify-content-between align-items-center">
-                            <button className="btn btn-primary" onClick={() => handleImageClick(item)}>Details</button>
-                            <button className="btn btn-primary" onClick={() => handleVideoClick(item)}>Video</button>
+                            <button className="custom-project-btn" onClick={() => handleImageClick(item)}>Details</button>
+                            <button className="custom-project-btn"  onClick={() => handleVideoClick(item)}>Video</button>
                         </div>
                     </div>
                 ))}
@@ -94,7 +94,7 @@ const ShowProjects = () => {
 
                                     </button>
                                 </div>
-                                
+
                                 <div className='modal-body'>
 
                                     {/*-------------- If showing video --------------*/}

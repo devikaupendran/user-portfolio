@@ -26,7 +26,6 @@ const Skills = () => {
                         <div className="percentage">
                             <p style={{ width: '70%' }} /> <span>7.5</span>
                         </div>
-
                     </div>
 
                     {/* ------ SWIFT UI  -------- */}
