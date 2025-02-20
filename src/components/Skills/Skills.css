@@ -69,15 +69,6 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* .skill hr {
-    outline: none;
-    border: none;
-    height: 6px;
-    border-radius: 50px;
-    background: rgb(235, 96, 226);
-    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
-} */
-
 .skill p {
     position: relative;
     outline: none;
