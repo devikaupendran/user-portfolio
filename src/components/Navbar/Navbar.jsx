@@ -10,28 +10,33 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef();
 
+    //open the side menu
     const openMenu = () => {
         menuRef.current.style.right="0";
         setIsMenuOpen(true);
     }
 
+    //for closing the side menu
     const closeMenu = () => {
         menuRef.current.style.right="-350px";
         setIsMenuOpen(false);
-
     }
 
-    // Function to handle menu item click and set active item
+    // Function to handle menu item click and set the active menu
     const handleMenuClick = (menuItem) => {
-        setMenu(menuItem); // This updates the active menu
+        setMenu(menuItem); 
     }
 
     return (
         <div className='navbar'>
-            <h1>Vijay</h1>
+            <h1> Vijay</h1>
+
+            {/* ------------------ Side Menu Open Icon ------------- */}
             <img src={menuOpen} onClick={openMenu} className='nav-mobile-open' alt="open menu"/>
+
             <ul className='nav-menu' ref={menuRef}>
 
+                {/* ------------------Side Menu Close Icon ------------- */}
                 <img src={menuClose} onClick={closeMenu} className='nav-mobile-close' alt="close menu" />
 
                 <li className={menu === 'home' ? 'active' : ''} onClick={() => handleMenuClick('home')}>
@@ -55,6 +60,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
+            {/* --------- connect with me button ------------  */}
             <button className="nav-connect">
                 <AnchorLink className='anchor-link' offset={50} href='#contact' >Connect with me </AnchorLink></button>
         </div>

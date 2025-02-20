@@ -5,14 +5,19 @@ import design from '../../assets/design.jpg';
 import discover from '../../assets/discover.jpg';
 
 const Services = () => {
+    //render
     return (
         <div className="services" id='service'>
+
+            {/* ---------- Main heading for service ---------- */}
             <div className="services-title">
                 <h1>My Services</h1>
             </div>
 
+            {/* -------------------- Container to display all the Services --------------------  */}
             <div className="services-container">
-                {/* DISCOVER Service */}
+
+                {/*----------  DISCOVER ----------*/}
                 <div className="service">
                     <img src={discover} alt="Discover" />
                     <div className="overlay">
@@ -21,7 +26,7 @@ const Services = () => {
                     <h3>DISCOVER</h3>
                 </div>
 
-                {/* DESIGN Service */}
+                {/* ---------- DESIGN ---------- */}
                 <div className="service">
                     <img src={design} alt="Design" style={{objectFit:'cover'}} />
                     <div className="overlay">
@@ -30,7 +35,7 @@ const Services = () => {
                     <h3>DESIGN</h3>
                 </div>
 
-                {/* DEVELOPMENT Service */}
+                {/* ---------- DEVELOPMENT ---------- */}
                 <div className="service">
                     <img src={development} alt="Development" />
                     <div className="overlay">
@@ -38,6 +43,7 @@ const Services = () => {
                     </div>
                     <h3>DEVELOPMENT</h3>
                 </div>
+
             </div>
         </div>
     );

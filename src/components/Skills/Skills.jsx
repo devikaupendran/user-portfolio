@@ -7,23 +7,29 @@ import swift from '../../assets/swift.png'
 import swiftUI from '../../assets/swiftui.png'
 
 const Skills = () => {
-
+    //render
     return (
+
+        //  -------------- Skills section -------------- 
         <div className="skills-section">
 
+            {/* -------------- Left section --------------  */}
             <div className="skills-left">
                 <div className="skills">
+
+                    {/* ------ UI KIT -------- */}
                     <div className="skill">
                         <div className="image-group">
                             <img src={swift} />
                             <span>UIKit</span>
                         </div>
                         <div className="percentage">
-                            <hr style={{width:'70%'}}/> <span>7.5</span>
+                            <hr style={{ width: '70%' }} /> <span>7.5</span>
                         </div>
 
                     </div>
 
+                    {/* ------ SWIFT UI  -------- */}
                     <div className="skill">
                         <div className="image-group">
                             <img src={swiftUI} />
@@ -31,14 +37,15 @@ const Skills = () => {
                         </div>
 
                         <div className="percentage">
-                            <hr style={{width:'50%'}}/> <span>5 </span>
+                            <hr style={{ width: '50%' }} /> <span>5 </span>
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <motion.div variants={fadeIn("right", 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.4 }} className="skills-right">
+            {/* -------- Iphone image with transition --------*/}
+            <motion.div variants={fadeIn("right", 0.4)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className="skills-right">
                 <img src={iphone} />
             </motion.div>
         </div>

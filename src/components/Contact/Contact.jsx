@@ -36,16 +36,19 @@ const Contact = () => {
         }
     };
 
+    //rendering
     return (
         <div className='contact' id='contact'>
             <div className="contact-title">
                 <h1>Get in touch</h1>
             </div>
 
+            {/* ----------contact container----------  */}
             <div className="contact-section">
 
-                {/* -------------- LEFT Section -------------- */}
+                {/* ---------------------------- LEFT Section ---------------------------- */}
                 <div className="contact-left">
+
                     <h1>Let's talk</h1>
                     <p>Thank you for visiting my portfolio! Feel free to reach out. I’d love to hear from you!</p>
                     <div className="contact-details">
@@ -70,17 +73,22 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* -------------- RIGHT Section -------------- */}
+                {/* -------------------------- RIGHT Section ----------------------------- */}
                 <form onSubmit={onSubmit} className="contact-right">
+
+                    {/* ------ name ------- */}
                     <label htmlFor="">Your Name</label>
                     <input type="text" placeholder='Enter your name' name='name' />
 
+                    {/* ------ Email ------- */}
                     <label htmlFor="">Your Email</label>
                     <input type="email" placeholder='Enter your email' name='email' />
 
+                    {/* ------ Message ------- */}
                     <label htmlFor="">Write your message here</label>
                     <textarea placeholder='Enter your message' rows='8' name='message' />
 
+                    {/* ------ Submit Btn ------- */}
                     <button className="contact-submit" type='submit'>Submit</button>
                 </form>
             </div>

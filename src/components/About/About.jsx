@@ -1,13 +1,17 @@
 import React from 'react'
 import './About.css'
 import profile_image from '../../assets/vijay.jpg'
+
 const About = () => {
+
+    //rendering
     return (
         <div className='about' id='about'>
             <div className="about-title">
                 <h1>About me</h1>
             </div>
 
+            {/* ----------- About  container ----------  */}
             <div className="about-sections">
                 
                 {/* ----- About left section ------- */}

@@ -7,6 +7,29 @@
     padding-top: 10px;
 }
 
+
+/* ---------------- stylings for links ---------------- */
+
+a {
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+}
+
+
 /* ---------------- Navigation menus ---------------- */
 .nav-menu {
     display: flex;
@@ -16,13 +39,15 @@
     font-size: 20px;
 }
 
-li {
-    position: relative;
-    cursor: pointer;
-    width: max-content;
+.nav-mobile-close {
+    display: none;
 }
 
-/* Underline for the active menu item */
+.nav-mobile-open {
+    display: none;
+}
+
+/* ----------------Underline for the active menu item ---------------- */
 li.active::after {
     content: "";
     position: absolute;
@@ -35,7 +60,7 @@ li.active::after {
     transition: transform 0.3s ease;
 }
 
-/* Hover effect for all menu items */
+/* ---------------- Hover effect for all menu items ----------------*/
 li::after {
     content: "";
     position: absolute;
@@ -86,24 +111,7 @@ button {
     cursor: pointer;
 }
 
-h1 {
-    font-weight: 700;
-}
-
-.anchor-link {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-mobile-close {
-    display: none;
-}
-
-.nav-mobile-open {
-    display: none;
-}
-
-/* ---------------- Responsive Design ---------------- */
+/* ------------------------------ responsive ------------------------  */
 
 @media (min-width:992px) and (max-width:1200px) {
     button {

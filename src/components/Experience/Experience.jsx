@@ -2,6 +2,8 @@ import React from 'react'
 import './Experience.css'
 
 const Experience = () => {
+
+    //render
     return (
         <div className="achievements">
             <div className="achievement">

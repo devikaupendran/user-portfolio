@@ -88,6 +88,8 @@
     text-align: justify;
 }
 
+/* ------------------------------- Responsive -------------------------------  */
+
 @media screen and (min-width: 1400px) {
     .about-left img {
         width: 350px;

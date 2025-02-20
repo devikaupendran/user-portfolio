@@ -36,6 +36,7 @@
     transition: 0.5s;
 }
 
+/* --------------------- responsive --------------------- */
 @media (max-width:768px) {
     .achievement h1 {
         font-size: 55px;

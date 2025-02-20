@@ -6,6 +6,7 @@
     height: 1000px;
 }
 
+/* ---------------- right section of skills ----------------  */
 .skills-right {
     width: 50%;
     height: 100%;
@@ -27,10 +28,10 @@
     gap: 18px;
 }
 
+/* ---------------- left section of skills ----------------  */
 .skills-left {
     width: 50%;
     height: 100%;
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +52,8 @@
     gap: 30px;
 }
 
+/* ---------------- percentage section ----------------  */
+
 .percentage {
     display: flex;
     align-items: center;
@@ -70,30 +73,11 @@
     border: none;
     height: 6px;
     border-radius: 50px;
-    /* background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%); */
     background: linear-gradient(264deg, #EB60E2 -5.09%, #84cdfa 106.28%);
 
 }
 
-
-
-/* @keyframes growWidth {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: var(--hr-width);
-    }
-}
-
-.skills-left .skill:nth-child(1) hr {
-    --hr-width: 75%;
-}
-
-.skills-left .skill:nth-child(2) hr {
-    --hr-width: 50%;
-} */
+/* ------------------------------------------------ responsive ------------------------------------------------  */
 
 @media (min-width:992px) and (max-width:1200px) {
 

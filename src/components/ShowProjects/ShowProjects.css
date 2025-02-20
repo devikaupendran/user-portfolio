@@ -1,0 +1,298 @@
+.show-projects-page {
+    width: 100%;
+    margin-top: 80px;
+    color: black;
+}
+
+/* ------------------------ all project display section -------------------- */
+
+.allProjects {
+    width: 100%;
+    color: white;
+}
+
+/* .imageOverlay img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    transition: 0.4s ease;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
+.allProjects img:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------Overlay effect---------------- */
+.imageOverlay {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.352) 0px 1px 3px, rgba(255, 255, 255, 0.384) 0px 1px 2px;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageOverlay:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.imageOverlay:hover .title-overlay {
+    opacity: 1;
+}
+
+.title-overlay p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*---------------- Styling for the buttons----------------  */
+.viewBtn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ------------------ video container ---------------  */
+.video-container {
+    width: 100%;
+    max-height: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+}
+
+.video-container video {
+    object-fit: contain;
+}
+
+
+/* ------------------------------------- modal -------------------------- */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    color: black;
+}
+
+.modal-content {
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    padding: 15px;
+}
+
+
+/* ----------------  Animation for video and image modal based on condition ---------------------  */
+.video-modal {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.image-modal {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* --------------------------------   Style for Modal Body of images and videos -------------------------------- */
+.modal-content.image-modal {
+    background-color: #fff;
+    color: black;
+}
+
+.modal-content.video-modal {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+
+.modal-title {
+    font-size: 30px;
+    background: linear-gradient(264deg, #ed3de1 -10.09%, #5db8f0 106.28%);
+    background-clip: clip;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ------------ carousal inside the modal ------------ */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    border-radius: 20px;
+    position: relative;
+}
+
+.carousel-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 8%;
+}
+
+/* ---------------- custumize button for previous and next button ---------------- */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-16 {
+    border: none;
+    color: #000;
+}
+
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 0, 0, 0.6),
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: #000;
+}
+
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active {
+    top: 2px;
+}
+
+/* ------------------ about project like description, link etc ------------------ */
+
+.project-details div {
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -18px inset, rgba(0, 0, 0, 0.3) 0px 15px 10px -16px inset;
+    padding: 10px 20px;
+}
+
+.project-details div b {
+    margin-right: 10px;
+}
+
+.project-details p {
+    overflow-y: scroll;
+    font-size: 14px;
+    max-height: 300px;
+}
+
+.project-details p strong {
+    font-size: 15px
+}
+
+/*---------------- Hide scrollbar but keep scroll functionality ----------------*/
+.project-details p::-webkit-scrollbar {
+    display: none;
+}
+
+.project-details p::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.project-details a {
+    color: blue;
+}
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------Responsive ------------------------- */
+
+/* Wide modal on large screens */
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 46%;
+        height: 80vh;
+    }
+}
+
+/* Normal-sized modal on small screens */
+@media (max-width: 991px) {
+    .modal-dialog {
+        max-width: 90%;
+        height: 80vh;
+    }
+}
