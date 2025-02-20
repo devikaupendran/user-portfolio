@@ -1,0 +1,35 @@
+@media (max-width: 992px) {
+    .nav-connect {
+        display: flex;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 10px 2px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-connect {
+        display: flex;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 10px 2px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 379px) {
+    .nav-connect {
+        display: flex;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 10px 2px;
+        justify-content: space-between;
+    }
+}
