@@ -46,7 +46,7 @@
 }
 
 .show-btn:hover {
-    box-shadow: 0 0 0 0 var(--hover), inset 14em 3.5em 0 0 var(--hover);
+    box-shadow: 0 0 0 0 var(--hover), inset 16em 3.5em 0 0 var(--hover);
 }
 
 .project-container button {

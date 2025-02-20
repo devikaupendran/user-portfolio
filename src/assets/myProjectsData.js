@@ -35,14 +35,15 @@ import calculatorVideo from '../assets/calculatorAppVideo.mp4'
 export const myProjects = [
     {
         _id: 1,
-        appName: "Attendance Register App",
-        appImg: attendanceRegisterApp3,
-        videoUrl:attendanceRegisterAppVideo,
+        appName: "Freyja App",
+        appImg: freyja1,
+        videoUrl:freyjaVideo,
         // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
-        carousal: [attendanceRegisterApp1, attendanceRegisterApp2, attendanceRegisterApp3, attendanceRegisterApp4, attendanceRegisterApp5, attendanceRegisterApp6,attendanceRegisterApp7,attendanceRegisterApp8,attendanceRegisterApp9],
+        carousal: [freyja1, freyja2, freyja3, freyja4],
         description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
-        reference: "https://github.com/Miraclevijaylal/AttendanceRegister-App"
+        reference: "https://github.com/EmeraldSky-x/Freyja "
     },
+
     {
         _id: 2,
         appName: "Calculator App",
@@ -55,6 +56,16 @@ export const myProjects = [
     },
     {
         _id: 3,
+        appName: "Attendance Register App",
+        appImg: attendanceRegisterApp3,
+        videoUrl:attendanceRegisterAppVideo,
+        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
+        carousal: [attendanceRegisterApp1, attendanceRegisterApp2, attendanceRegisterApp3, attendanceRegisterApp4, attendanceRegisterApp5, attendanceRegisterApp6,attendanceRegisterApp7,attendanceRegisterApp8,attendanceRegisterApp9],
+        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
+        reference: "https://github.com/Miraclevijaylal/AttendanceRegister-App"
+    },
+    {
+        _id: 4,
         appName: "Trip Booking App",
         appImg: travelApp1,
         videoUrl:travelAppVideo,
@@ -64,7 +75,7 @@ export const myProjects = [
         reference: "https://github.com/Miraclevijaylal/APPUI/tree/master/UserInterfaceProject"
     },
     {
-        _id: 4,
+        _id: 5,
         appName: "MAP", 
         appImg: map1,
         videoUrl:mapVideo,
@@ -73,16 +84,7 @@ export const myProjects = [
         description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
         reference: "https://github.com/Miraclevijaylal/iOSMapKitProject"
     },
-    {
-        _id: 5,
-        appName: "Freyja App",
-        appImg: freyja1,
-        videoUrl:freyjaVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
-        carousal: [freyja1, freyja2, freyja3, freyja4],
-        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
-        reference: "https://github.com/EmeraldSky-x/Freyja "
-    },
+   ,
     // {
     //     _id: 6,
     //     appName: "Attendance Register App",
