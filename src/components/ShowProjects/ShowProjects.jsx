@@ -57,9 +57,9 @@ const ShowProjects = () => {
         <div className="container show-projects-page">
 
             {/* -------------- view all projects -------------- */}
-            <div className="row g-5 allProjects">
+            <div className="allProjects d-flex flex-wrap gap-5 justify-content-center">
                 {myProjects?.map((item, index) => (
-                    <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-5" key={index}>
+                    <div className="project-item" key={index}>
 
                         {/* --------------Image and project name -------------- */}
                         <div className="imageOverlay">

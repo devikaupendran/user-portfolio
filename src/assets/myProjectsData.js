@@ -39,7 +39,6 @@ export const myProjects = [
         appName: "Freyja App",
         appImg: freyja1,
         videoUrl: freyjaVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
         carousal: [freyja1, freyja2, freyja3, freyja4],
         description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
         reference: "https://github.com/EmeraldSky-x/Freyja "
@@ -50,9 +49,8 @@ export const myProjects = [
         appName: "Calculator App",
         appImg: calculatorApp1,
         videoUrl: calculatorVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
         carousal: [calculatorApp1, calculatorApp2, calculatorApp3],
-        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
+        description: "This project replicates the look and functionality of Apple's iOS calculator while following clean code principles and best practices for iOS app development.",
         reference: "https://github.com/Miraclevijaylal/CalculatorClone-MVVM"
     },
     {
@@ -60,9 +58,8 @@ export const myProjects = [
         appName: "Attendance Register App",
         appImg: attendanceRegisterApp3,
         videoUrl: attendanceRegisterAppVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
         carousal: [attendanceRegisterApp1, attendanceRegisterApp2, attendanceRegisterApp3, attendanceRegisterApp4, attendanceRegisterApp5, attendanceRegisterApp6, attendanceRegisterApp10, attendanceRegisterApp7, attendanceRegisterApp8, attendanceRegisterApp9],
-        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
+        description: "The Calendar Register App is a user-friendly  app that integrates FSCalendar for an interactive and visually appealing calendar interface. It allows users to register efficiently while ensuring secure data storage using Core Data. User Authentication & Data Persistence Users can sign up and log in, with their credentials securely stored using Core Data.",
         reference: "https://github.com/Miraclevijaylal/AttendanceRegister-App"
     },
     {
@@ -70,9 +67,8 @@ export const myProjects = [
         appName: "Trip Booking App",
         appImg: travelApp1,
         videoUrl: travelAppVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
         carousal: [travelApp1, travelApp2, travelApp3],
-        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
+        description: "The APPUI project appears to be a UI-focused iOS application that showcases different user interface (UI) components and design patterns for building visually appealing and user-friendly mobile apps",
         reference: "https://github.com/Miraclevijaylal/APPUI/tree/master/UserInterfaceProject"
     },
     {
@@ -80,20 +76,9 @@ export const myProjects = [
         appName: "MAP",
         appImg: map1,
         videoUrl: mapVideo,
-        // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
         carousal: [map1, map2, map3],
-        description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
+        description: "This project showcases essential map-related functionalities, making it a useful reference for developers interested in working with location-based services in iOS applications.",
         reference: "https://github.com/Miraclevijaylal/iOSMapKitProject"
     },
-    ,
-    // {
-    //     _id: 6,
-    //     appName: "Attendance Register App",
-    //     appImg: attendanceRegisterApp3,
-    //     // technology: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
-    //     carousal: [attendanceRegisterApp1, attendanceRegisterApp2, attendanceRegisterApp3, attendanceRegisterApp4, attendanceRegisterApp5, attendanceRegisterApp6],
-    //     description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests. ",
-    //     reference: "https://github.com/devikaupendran/KeySafe-MERN-Authentication "
-    // },
 ]
 

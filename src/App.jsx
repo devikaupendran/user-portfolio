@@ -13,7 +13,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import CustomNavbar from './components/Navbar/CustomNavbar'
 
-// Import the new page component
 import ShowProjects from './components/ShowProjects/ShowProjects';  // The new page component
 
 const App = () => {

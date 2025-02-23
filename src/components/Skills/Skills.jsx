@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import React from 'react'
@@ -10,7 +11,7 @@ const Skills = () => {
     //render
     return (
 
-        //  -------------- Skills section -------------- 
+        //  -------------- Skills section --------------
         <div className="skills-section">
 
             {/* -------------- Left section --------------  */}
