@@ -116,8 +116,8 @@ const ShowProjects = () => {
                                                 width={'500px'} height={'500px'}
                                             />
                                             <div className="carousel-controls">
-                                                <button onClick={goToPreviousImage} className="custom-btn btn-16">&laquo;</button>
-                                                <button onClick={goToNextImage} className="custom-btn btn-16">&raquo;</button>
+                                                <button onClick={goToPreviousImage} className="button-30">&laquo;</button>
+                                                <button onClick={goToNextImage} className="button-30">&raquo;</button>
                                             </div>
                                         </div>
                                     )}
