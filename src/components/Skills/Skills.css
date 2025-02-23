@@ -22,12 +22,6 @@
     border-radius: 30px;
 }
 
-.image-group {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
 /* ---------------- left section of skills ----------------  */
 .skills-left {
     width: 50%;
@@ -53,40 +47,24 @@
     gap: 30px;
 }
 
-/* ---------------- percentage section ----------------  */
-
-.percentage {
+.image-group {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
 }
 
-.percentage span {
-    font-size: 28px;
-    line-height: 1.1428571429;
-    font-weight: 600;
-    letter-spacing: .007em;
-    font-family: Helvetica, Arial, sans-serif;
+.image-group img {
+    width: 100px;
+    height: 100px;
 }
 
-.skill p {
-    position: relative;
-    outline: none;
-    border: none;
-    padding: 3px;
+.image-group:hover{
+    transform: translateY(-10px);
+    transition: 1s ease;
 }
 
-.skill p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border: 3px solid transparent;
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 0%, rgba(46, 188, 191, 1) 100%);
+.image-group span {
+    font-size: 24px;
 }
 
 

@@ -15,7 +15,7 @@ const Skills = () => {
         <div className="skills-section">
 
             {/* -------------- Left section --------------  */}
-            <div className="skills-left">
+            <motion.div variants={fadeIn("left", 0.4)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className="skills-left">
                 <div className="skills">
 
                     {/* ------ UI KIT -------- */}
@@ -23,9 +23,6 @@ const Skills = () => {
                         <div className="image-group">
                             <img src={swift} />
                             <span>UIKit</span>
-                        </div>
-                        <div className="percentage">
-                            <p style={{ width: '70%' }} /> <span>7.5</span>
                         </div>
                     </div>
 
@@ -35,14 +32,9 @@ const Skills = () => {
                             <img src={swiftUI} />
                             <span>Swift UI</span>
                         </div>
-
-                        <div className="percentage">
-                            <p style={{ width: '50%' }} /> <span>5 </span>
-                        </div>
-
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* -------- Iphone image with transition --------*/}
             <motion.div variants={fadeIn("right", 0.4)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.6 }} className="skills-right">
