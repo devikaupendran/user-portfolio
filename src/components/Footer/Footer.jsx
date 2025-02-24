@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Footer.css'
 
 const Footer = () => {
+
+    const [year, setYear] = useState(new Date().getFullYear());
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setYear(new Date().getFullYear());
+        }, 1000);
+
+        // Cleanup the interval when the component unmounts
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <div className='footer'>
 
@@ -29,7 +41,7 @@ const Footer = () => {
 
             {/* -------------- footer bottom section -------------- */}
             <div className="footer-bottom">
-                <p className='footer-bottom-left'>&copy; 2025 Vijay lal.S . All rights reserved</p>
+                <p className='footer-bottom-left'>&copy; {year} Vijay lal.S . All rights reserved</p>
                 <div className="footer-bottom-right">
                     <p>Term of Services</p>
                     <p>Privacy Policy</p>
